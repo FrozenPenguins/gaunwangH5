@@ -1,0 +1,30 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Vue-UniApp-Project"
+			}
+		}
+	],
+	"globalStyle": {
+		"backgroundColor": "#FAFBFC",
+		"pageOrientation": "portrait",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationBarTextStyle": "black",
+		"app-plus": {
+			"scrollIndicator": "none",
+			"softinputNavBar": "none",
+			"bounce": "none",
+			"compatible": {
+				"ignoreVersion": true
+			}
+		}
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"Am-(.*)": "@/components/Am-$1/index.vue"
+		}
+	}
+}
