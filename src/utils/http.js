@@ -5,5 +5,9 @@ const development = {
 const production = {
 	baseUrl: 'https://www.mxnzp.com'
 }
-
-export default [process.env.NODE_ENV]
+// #ifdef  H5
+export default ''
+// #endif
+// #ifndef  H5
+export default [process.env.NODE_ENV].baseUrl
+// #endif
