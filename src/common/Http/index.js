@@ -1,3 +1,4 @@
+import Vue from 'vue'
 import baseUrl from '@/utils/http'
 
 let instacne = null
@@ -12,7 +13,10 @@ class Http {
 
 	constructor() {
 		this.timeout = 60
-		this.headers = {}
+		this.headers = {
+			app_id: 'krkgkjgyou8kffus',
+			app_secret: 'V0dKdmErZUptS3hNWC92V2Zvb2hHUT09'
+		}
 	}
 
 	// 请求拦截器
@@ -40,17 +44,28 @@ class Http {
 					method,
 					header,
 					data,
-					success: response => this.responseInterceptor(response).then(success => resolve(success)).catch(error => reject(error)),
-					fail: error => reject(error)
+					success: response => {
+						this.responseInterceptor(response).then(success => {
+							resolve(success)
+						}).catch(error => {
+							reject(error)
+						})
+					},
+					fail: ({ errMsg }) => {
+						reject({
+							title: errMsg,
+							icon: 'none'
+						})
+					}
 				})
 			}).catch(error => reject(error))
 		})
 	}
 
 	// 响应拦截器
-	responseInterceptor() {
+	responseInterceptor(response) {
 		if (response.statusCode >= 200 && response.statusCode <= 300) {
-			if (response.data.code == 200) {
+			if (response.data.code == 200 || response.data.code == 1) {
 				return Promise.resolve(response.data.data)
 			} else {
 				return Promise.reject({

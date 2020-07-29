@@ -8,13 +8,10 @@
 	export default {
 		data: () => ({
 			
-		}),
-		onLoad() {
-			
-		}
+		})
 	}
 </script>
 
-<style>
+<style lang="scss">
 	
 </style>

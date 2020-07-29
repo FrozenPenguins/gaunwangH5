@@ -1,29 +1,49 @@
 <script>
 export default {
 	onLaunch: () => {
+		// #ifdef  H5 || MP
 		console.log(
 			"%cAmmmm --->>> App Launch",
-			"background: #1678FF; color: white; padding: 0 6px; border-radius: 1px;"
+			"background: url(http://img.willmid.com/images/2020/07/08/4k_7e8c8.jpg); background-size: cover; background-position: center; color: white; padding: 3px 6px; border-radius: 3px; font-weight: bold;"
 		);
+		// #endif
+		// #ifndef  H5 || MP
+		console.log("Ammmm --->>> App Launch");
+		// #endif
 	},
 	onShow: () => {
+		// #ifdef  H5 || MP
 		console.log(
 			"%cAmmmm --->>> App Show",
-			"background: #04CE68; color: white; padding: 0 3px; border-radius: 1px;"
+			"background: url(http://img.willmid.com/images/2020/07/08/4k_7e8c8.jpg); background-size: cover; background-position: center; color: white; padding: 3px 6px; border-radius: 3px; font-weight: bold;"
 		);
+		// #endif
+		// #ifndef  H5 || MP
+		console.log("Ammmm --->>> App Show");
+		// #endif
 	},
 	onHide: () => {
+		// #ifdef  H5 || MP
 		console.log(
 			"%cAmmmm --->>> App Hide",
-			"background: #777777; color: white; padding: 0 6px; border-radius: 1px;"
+			"background: url(http://img.willmid.com/images/2020/07/08/4k_7e8c8.jpg); background-size: cover; background-position: center; color: white; padding: 3px 6px; border-radius: 3px; font-weight: bold;"
 		);
+		// #endif
+		// #ifndef  H5 || MP
+		console.log("Ammmm --->>> App Hide");
+		// #endif
 	},
 	onError: (error) => {
+		// #ifdef  H5 || MP
 		console.log(
-			"%c错误",
-			"background: red; color: white; padding: 0 6px;",
+			"%c错误 --->>> ",
+			"background: url(http://img.willmid.com/images/2020/07/08/4k_7e8c8.jpg); background-size: cover; background-position: center; color: white; padding: 3px 6px; border-radius: 3px; font-weight: bold;",
 			error
 		);
+		// #endif
+		// #ifndef  H5 || MP
+		console.log("错误 --->>>", error);
+		// #endif
 	}
 };
 </script>
