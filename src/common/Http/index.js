@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import baseUrl from '@/utils/http'
 
 let instacne = null
