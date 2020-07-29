@@ -12,10 +12,7 @@ class Http {
 
 	constructor() {
 		this.timeout = 60
-		this.headers = {
-			app_id: 'krkgkjgyou8kffus',
-			app_secret: 'V0dKdmErZUptS3hNWC92V2Zvb2hHUT09'
-		}
+		this.headers = {}
 	}
 
 	// 请求拦截器
