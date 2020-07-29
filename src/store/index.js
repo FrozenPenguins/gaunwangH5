@@ -19,4 +19,5 @@ const store = new Vuex.Store({
 	modules
 })
 
+Vue.prototype.$Store = store
 export default store
