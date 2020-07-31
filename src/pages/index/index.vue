@@ -1,6 +1,6 @@
 <template>
 	<view class="page">
-		
+		<Am-NavigationBar></Am-NavigationBar>
 	</view>
 </template>
 

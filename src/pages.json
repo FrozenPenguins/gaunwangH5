@@ -12,6 +12,7 @@
 		"pageOrientation": "portrait",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
 		"app-plus": {
 			"scrollIndicator": "none",
 			"softinputNavBar": "none",
