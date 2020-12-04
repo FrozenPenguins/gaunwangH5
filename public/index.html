@@ -15,12 +15,18 @@
 		document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
 	</script>
 	<link rel="stylesheet" href="<%= BASE_URL %>static/index.<%= VUE_APP_INDEX_CSS_HASH %>.css" />
+	 <style>
+	     .aaa{
+		 position: absolute;
+		 z-index: 99;
+	     }
+	 </style>
 </head>
-
-<body>
+<body style="position: relative;">
 	<noscript>
 		<strong>Please enable JavaScript to continue.</strong>
 	</noscript>
+	 <script type="text/javascript">document.write(unescape("%3Cspan class='aaa' id='cnzz_stat_icon_1279491775'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1279491775%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 	<div id="app"></div>
 	<!-- built files will be auto injected -->
 </body>

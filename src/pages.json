@@ -5,6 +5,48 @@
 			"style": {
 				"navigationBarTitleText": "Vue-UniApp-Project"
 			}
+		},
+		{
+			"path": "pages/business/business",
+			"style": {
+				"navigationBarTitleText": "业务范围"
+			}
+		},
+		{
+			"path": "pages/project/project",
+			"style": {
+				"navigationBarTitleText": "项目案例"
+			}
+		},
+		{
+			"path": "pages/customer/customer",
+			"style": {
+				"navigationBarTitleText": "合作客户"
+			}
+		},
+		{
+			"path": "pages/contactUs/contact",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+						}
+		},
+		{
+			"path": "pages/project/projectInfo/projectInfo",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+						}
+		},
+		{
+			"path": "components/common/title-head/head",
+			"style": {
+				"navigationBarTitleText": "demo"
+						}
+		},
+		{
+			"path": "components/common/foot/foot",
+			"style": {
+				"navigationBarTitleText": "demo"
+						}
 		}
 	],
 	"globalStyle": {

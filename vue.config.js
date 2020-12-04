@@ -1,13 +1,14 @@
 module.exports = {
+	publicPath: './wap',
 	devServer: {
-		proxy: {
-			'/api': {
-				target: 'https://www.mxnzp.com',
-				// pathRewrite: {
-				// 	'^/api': ''
-				// }
-			}
-		}
+		// proxy: {
+		// 	'/api': {
+		// 		target: 'https://www.mxnzp.com',
+		// 		// pathRewrite: {
+		// 		// 	'^/api': ''
+		// 		// }
+		// 	}
+		// }
 	},
 	chainWebpack: (config) => {
 		config.optimization.minimizer('terser').tap((args) => {
